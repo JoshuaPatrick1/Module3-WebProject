@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 3 Web Project</title>
+  <!-- SEO meta tags -->
+  <title>Module 3 Web Project | Accessible & Responsive Design</title>
+  <meta name="description" content="Cybersecurity student project website demonstrating accessibility, responsive design, and ethical web practices.">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,6 +25,8 @@
     <section id="about">
       <h2>About</h2>
       <p>This site is built for my Module 3 project using HTML, CSS, and JavaScript.</p>
+      <!-- Example external link -->
+      <p>Learn more about <a href="https://www.w3.org/WAI/" target="_blank">Web Accessibility Guidelines</a>.</p>
     </section>
 
     <section id="features">
@@ -31,6 +36,14 @@
         <li>Responsive design</li>
         <li>Interactive content</li>
       </ul>
+      <!-- Example table -->
+      <table>
+        <caption>Project Features Overview</caption>
+        <tr><th>Feature</th><th>Status</th></tr>
+        <tr><td>Accessibility</td><td>Implemented</td></tr>
+        <tr><td>Responsive Design</td><td>Implemented</td></tr>
+        <tr><td>SEO Basics</td><td>In Progress</td></tr>
+      </table>
     </section>
 
     <section id="contact">
@@ -42,13 +55,25 @@
         <label for="email">Email:</label>
         <input id="email" type="email" name="email" required>
 
+        <label>
+          <input type="checkbox" required>
+          I consent to my data being used to respond to my inquiry.
+        </label>
+
         <button type="submit">Submit</button>
       </form>
+      <p>Your information will only be used to respond to your inquiry.</p>
     </section>
   </main>
 
   <footer role="contentinfo">
     <p>&copy; 2025 Joshua Patrick</p>
+    <!-- Footer links -->
+    <p>
+      <a href="https://github.com/JoshuaPatrick1/Module3-WebProject" target="_blank">GitHub Repo</a> |
+      <a href="https://validator.w3.org/" target="_blank">HTML Validator</a> |
+      <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a>
+    </p>
   </footer>
 
   <script src="script.js"></script>
