@@ -1,5 +1,10 @@
-// Simple interactivity: alert when form is submitted
-document.querySelector("form").addEventListener("submit", function(event) {
-  event.preventDefault();
-  alert("Thank you for submitting the form!");
-});
+function validateForm() {
+    let name = document.forms["contactForm"]["name"].value;
+    let email = document.forms["contactForm"]["email"].value;
+
+    if (name === "" || email === "") {
+        alert("Name and Email are required.");
+        return false;
+    }
+    return true;
+}
